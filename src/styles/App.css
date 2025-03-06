@@ -1,0 +1,17 @@
+/* File: src/styles/App.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', 'Roboto', sans-serif;
+}
+
+section {
+  padding-top: 80px;
+  margin-top: -80px;
+}
