@@ -3,13 +3,9 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaDatabase, 
-  FaGit, FaDocker, FaServer, FaNpm, FaTools, FaCode, FaTerminal,
-  FaWordpress, FaBootstrap, FaGithub, FaLock, FaPaintBrush, FaVideo,
-  FaUserShield
+  FaGit, FaDocker, FaServer, FaNpm, FaTools, FaCode, FaTerminal
 } from 'react-icons/fa';
-import { SiDotnet, SiMysql, SiPostman, SiMongodb, SiTailwindcss, 
-  SiExpress, SiFigma, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremiere 
-} from 'react-icons/si';
+import { SiDotnet, SiMysql, SiPostman } from 'react-icons/si';
 
 const SkillCategory = ({ title, skills }) => {
   return (
@@ -41,25 +37,16 @@ const Skills = () => {
     { name: 'JavaScript', icon: FaJs },
     { name: 'React', icon: FaReact },
     { name: 'Angular', icon: FaAngular },
-    { name: 'Bootstrap', icon: FaBootstrap },
-    { name: 'Tailwind CSS', icon: SiTailwindcss },
-    { name: 'WordPress', icon: FaWordpress },
-    { name: 'WooCommerce', icon: FaWordpress },
+    { name: 'NPM', icon: FaNpm },
   ];
 
   const backendSkills = [
     { name: 'Node.js', icon: FaNodeJs },
-    { name: 'Express.js', icon: SiExpress },
     { name: '.NET Core', icon: SiDotnet },
-    { name: 'ASP.NET MVC', icon: SiDotnet },
     { name: 'REST APIs', icon: FaServer },
-    { name: 'JWT Auth', icon: FaUserShield },
-    { name: 'Web Security', icon: FaLock },
   ];
 
   const databaseSkills = [
-    { name: 'MongoDB', icon: SiMongodb },
-    { name: 'Mongoose', icon: FaDatabase },
     { name: 'SQL Server', icon: SiMysql },
     { name: 'MySQL', icon: SiMysql },
     { name: 'Database Design', icon: FaDatabase },
@@ -67,21 +54,11 @@ const Skills = () => {
 
   const toolsSkills = [
     { name: 'Git', icon: FaGit },
-    { name: 'GitHub', icon: FaGithub },
-    { name: 'VS Code', icon: FaCode },
-    { name: 'Visual Studio', icon: FaCode },
+    { name: 'VSCode', icon: FaCode },
     { name: 'Cursor', icon: FaTerminal },
-    { name: 'SSMS', icon: FaDatabase },
     { name: 'Postman', icon: SiPostman },
     { name: 'Docker', icon: FaDocker },
-    { name: 'Agile/Scrum', icon: FaTools },
-  ];
-
-  const designSkills = [
-    { name: 'Figma', icon: SiFigma },
-    { name: 'Illustrator', icon: SiAdobeillustrator },
-    { name: 'Photoshop', icon: SiAdobephotoshop },
-    { name: 'Premiere', icon: FaVideo },
+    { name: 'Dev Tools', icon: FaTools },
   ];
 
   return (
@@ -105,7 +82,6 @@ const Skills = () => {
         <SkillCategory title="Backend Development" skills={backendSkills} />
         <SkillCategory title="Database Management" skills={databaseSkills} />
         <SkillCategory title="Tools & Technologies" skills={toolsSkills} />
-        <SkillCategory title="Design Tools" skills={designSkills} />
       </div>
     </section>
   );

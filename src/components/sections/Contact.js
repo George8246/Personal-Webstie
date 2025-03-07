@@ -74,8 +74,8 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Email</h4>
-                  <a href="mailto:your.email@example.com" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
-                    your.email@example.com
+                  <a href="mailto:georgeyssa@gmail.com" className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400">
+                    georgeyssa@gmail.com
                   </a>
                 </div>
               </div>
@@ -87,7 +87,7 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">Phone</h4>
                   <p className="text-gray-700 dark:text-gray-300">
-                    +1 (234) 567-8901
+                    +201551677783
                   </p>
                 </div>
               </div>
@@ -99,12 +99,12 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">LinkedIn</h4>
                   <a 
-                    href="https://linkedin.com/in/yourprofile" 
+                    href="https://www.linkedin.com/in/georgeessam/" 
                     target="_blank" 
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   >
-                    linkedin.com/in/yourprofile
+                    linkedin.com/in/georgeessam
                   </a>
                 </div>
               </div>
@@ -116,12 +116,12 @@ const Contact = () => {
                 <div>
                   <h4 className="text-lg font-medium text-gray-900 dark:text-white">GitHub</h4>
                   <a 
-                    href="https://github.com/yourusername" 
+                    href="https://github.com/George8246" 
                     target="_blank" 
                     rel="noreferrer"
                     className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400"
                   >
-                    github.com/yourusername
+                    github.com/George8246
                   </a>
                 </div>
               </div>

@@ -15,7 +15,7 @@ const Home = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900 dark:text-white">
-            Hi, I'm <span className="text-blue-600 dark:text-blue-400">YourName</span>
+            Hi, I'm <span className="text-blue-600 dark:text-blue-400">George Essam Helmy</span>
           </h1>
           <h2 className="text-2xl md:text-3xl font-semibold mb-2 text-gray-700 dark:text-gray-300">
             Full-Stack Web Developer
@@ -25,7 +25,7 @@ const Home = () => {
           </p>
           <div className="flex justify-center md:justify-start space-x-4 mb-8">
             <a 
-              href="https://linkedin.com/in/yourprofile" 
+              href="https://www.linkedin.com/in/georgeessam/" 
               target="_blank" 
               rel="noreferrer"
               className="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-full flex items-center"
@@ -33,7 +33,7 @@ const Home = () => {
               <FaLinkedin className="mr-2" /> LinkedIn
             </a>
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/George8246" 
               target="_blank" 
               rel="noreferrer"
               className="text-white bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 px-4 py-2 rounded-full flex items-center"
