@@ -1,6 +1,8 @@
 // File: src/components/sections/About.js
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaFileAlt } from 'react-icons/fa';
+import Resume from '../../assets/resume/George Resume.pdf';
 
 const About = () => {
   return (
@@ -37,10 +39,20 @@ const About = () => {
               My experience includes developing e-commerce platforms that combine cutting-edge front-end technologies with efficient
               back-end systems. I believe in writing clean, maintainable code that delivers exceptional performance and reliability.
             </p>
-            <p className="text-gray-700 dark:text-gray-300">
+            <p className="text-gray-700 dark:text-gray-300 mb-6">
               Prior to my career in web development, I served as an officer where I honed my leadership and team management skills,
               which I now apply to collaborate effectively with cross-functional teams in delivering high-quality web solutions.
             </p>
+            
+            <a
+              href={`${process.env.PUBLIC_URL}/${Resume}#view=FitH`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+            >
+              <FaFileAlt className="mr-2" />
+              View Resume
+            </a>
           </motion.div>
           
           <motion.div

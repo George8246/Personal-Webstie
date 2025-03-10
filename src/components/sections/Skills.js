@@ -3,9 +3,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaDatabase, 
-  FaGit, FaDocker, FaServer, FaNpm, FaTools, FaCode, FaTerminal
+  FaGit, FaServer, FaTools
 } from 'react-icons/fa';
-import { SiDotnet, SiMysql, SiPostman } from 'react-icons/si';
+import { SiDotnet, SiMysql, SiPostman, SiExpress, SiMongodb } from 'react-icons/si';
+import { BiLogoJquery } from 'react-icons/bi';
+import { VscVscode } from 'react-icons/vsc';
 
 const SkillCategory = ({ title, skills }) => {
   return (
@@ -35,29 +37,28 @@ const Skills = () => {
     { name: 'HTML5', icon: FaHtml5 },
     { name: 'CSS3', icon: FaCss3Alt },
     { name: 'JavaScript', icon: FaJs },
+    { name: 'jQuery', icon: BiLogoJquery },
     { name: 'React', icon: FaReact },
-    { name: 'Angular', icon: FaAngular },
-    { name: 'NPM', icon: FaNpm },
+    { name: 'Angular', icon: FaAngular }
   ];
 
   const backendSkills = [
     { name: 'Node.js', icon: FaNodeJs },
+    { name: 'Express', icon: SiExpress },
     { name: '.NET Core', icon: SiDotnet },
     { name: 'REST APIs', icon: FaServer },
   ];
 
   const databaseSkills = [
-    { name: 'SQL Server', icon: SiMysql },
     { name: 'MySQL', icon: SiMysql },
+    { name: 'Mongodb', icon: SiMongodb },
     { name: 'Database Design', icon: FaDatabase },
   ];
 
   const toolsSkills = [
     { name: 'Git', icon: FaGit },
-    { name: 'VSCode', icon: FaCode },
-    { name: 'Cursor', icon: FaTerminal },
+    { name: 'VSCode', icon: VscVscode },
     { name: 'Postman', icon: SiPostman },
-    { name: 'Docker', icon: FaDocker },
     { name: 'Dev Tools', icon: FaTools },
   ];
 
