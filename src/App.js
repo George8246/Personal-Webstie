@@ -11,6 +11,7 @@ import Experience from './components/sections/Experience';
 import Education from './components/sections/Education';
 import Contact from './components/sections/Contact';
 import ThemeToggle from './components/ui/ThemeToggle';
+import ScrollToTop from './components/ScrollToTop';
 import './styles/App.css';
 
 function App() {
@@ -54,6 +55,7 @@ function App() {
           } />
         </Routes>
         <Footer />
+        <ScrollToTop />
       </div>
     </Router>
   );

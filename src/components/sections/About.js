@@ -1,10 +1,12 @@
 // File: src/components/sections/About.js
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaFileAlt } from 'react-icons/fa';
-import Resume from '../../assets/resume/George Resume.pdf';
+import { FaFileAlt, FaFileWord } from 'react-icons/fa';
 
 const About = () => {
+  const pdfResumeUrl = "https://drive.google.com/file/d/1dSNKWBrDu_6la6-1ggpZAd3r1-ClXVkr/view";
+  const wordResumeUrl = "https://drive.google.com/file/d/1MzErfzu2wN4t4_2W0zUclTZCXal_GW_k/view";
+
   return (
     <section id="about" className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,15 +46,27 @@ const About = () => {
               which I now apply to collaborate effectively with cross-functional teams in delivering high-quality web solutions.
             </p>
             
-            <a
-              href={`${process.env.PUBLIC_URL}/${Resume}#view=FitH`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
-            >
-              <FaFileAlt className="mr-2" />
-              View Resume
-            </a>
+            <div className="flex flex-wrap gap-4">
+              <a
+                href={pdfResumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+              >
+                <FaFileAlt className="mr-2" />
+                PDF Resume
+              </a>
+
+              <a
+                href={wordResumeUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center px-6 py-3 bg-green-500 hover:bg-green-600 text-white rounded-lg transition-colors duration-200 shadow-md hover:shadow-lg"
+              >
+                <FaFileWord className="mr-2" />
+                Word Resume
+              </a>
+            </div>
           </motion.div>
           
           <motion.div

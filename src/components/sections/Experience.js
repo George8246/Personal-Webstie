@@ -20,7 +20,7 @@ const ExperienceItem = ({ experience, index }) => {
       <h3 className="text-xl font-bold text-gray-900 dark:text-white">{experience.title}</h3>
       <p className="text-lg text-blue-600 dark:text-blue-400 mb-2">{experience.company}</p>
       <p className="text-gray-700 dark:text-gray-300 mb-4">{experience.description}</p>
-      <div className="flex flex-wrap gap-2 mb-2">
+      <div className="flex flex-wrap gap-2 mb-4">
         {experience.technologies.map((tech, techIndex) => (
           <span 
             key={techIndex} 
@@ -30,11 +30,26 @@ const ExperienceItem = ({ experience, index }) => {
           </span>
         ))}
       </div>
-      <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
-        {experience.responsibilities.map((responsibility, respIndex) => (
-          <li key={respIndex}>{responsibility}</li>
-        ))}
-      </ul>
+
+      <div className="mb-4">
+        <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Key Responsibilities:</h4>
+        <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+          {experience.responsibilities.map((responsibility, respIndex) => (
+            <li key={respIndex}>{responsibility}</li>
+          ))}
+        </ul>
+      </div>
+
+      {experience.learnedSkills && (
+        <div>
+          <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">Learned Skills:</h4>
+          <ul className="list-disc list-inside text-gray-700 dark:text-gray-300 space-y-2">
+            {experience.learnedSkills.map((skill, skillIndex) => (
+              <li key={skillIndex}>{skill}</li>
+            ))}
+          </ul>
+        </div>
+      )}
     </motion.div>
   );
 };
@@ -42,31 +57,51 @@ const ExperienceItem = ({ experience, index }) => {
 const Experience = () => {
   const experiences = [
     {
-      title: "Freelance Full-Stack Web Developer",
+      title: "Freelance Web Developer",
       company: "Self-Employed",
       period: "2022 - 2023",
-      description: "Designed and developed custom web applications for various clients, focusing on creating scalable and responsive solutions.",
-      technologies: ["JavaScript", "React", "Node.js", ".NET Core", "SQL Server", "HTML/CSS"],
+      description: "Developed multiple client websites using WordPress, React, and .NET Core, delivering tailored solutions to meet diverse business needs.",
+      technologies: [
+        "WordPress", "React", ".NET Core", "WooCommerce", "HTML", "CSS", 
+        "JavaScript", "PayPal API", "Stripe API", "SEO"
+      ],
       responsibilities: [
-        "Developed and maintained e-commerce websites with secure payment gateway integration using Stripe API.",
-        "Implemented SEO optimization strategies that improved client site rankings on search engines.",
-        "Created responsive, mobile-first web designs using modern CSS frameworks and techniques.",
-        "Integrated third-party APIs to enhance website functionality and user experience.",
-        "Provided ongoing maintenance and support for client websites, ensuring optimal performance."
+        "Built and customized e-commerce websites using WordPress and WooCommerce, ensuring seamless user experiences and robust functionality.",
+        "Integrated payment gateways, designed custom themes, and implemented SEO optimization techniques to improve website performance and search engine rankings.",
+        "Provided ongoing maintenance, feature updates, and technical support to ensure client satisfaction and long-term website reliability."
+      ],
+      learnedSkills: [
+        "Gained hands-on experience in full-stack development, combining front-end and back-end technologies.",
+        "Developed expertise in e-commerce platform customization, including WooCommerce plugin development and theme customization.",
+        "Improved knowledge of SEO best practices, including meta tag optimization, site speed improvement, and keyword analysis.",
+        "Enhanced proficiency in responsive web design to ensure cross-device compatibility and accessibility.",
+        "Acquired skills in client communication and project management, balancing multiple projects and deadlines effectively.",
+        "Learned to troubleshoot and debug complex issues across different platforms and frameworks.",
+        "Strengthened understanding of web security practices, including SSL implementation and data protection measures."
       ]
     },
     {
-      title: "Junior Web Developer",
-      company: "Tech Solutions Inc.",
-      period: "2021 - 2022",
-      description: "Worked as part of a development team to create and maintain web applications for corporate clients.",
-      technologies: ["JavaScript", "Angular", ".NET Core", "SQL Server", "Bootstrap"],
+      title: "Military Reserve Officer | Full Stack Developer",
+      company: "Ministry of Defense",
+      period: "2024 - 2025",
+      description: "Led development and maintenance of critical military web applications and systems, focusing on security, scalability, and performance optimization.",
+      technologies: [
+        "ASP.NET", "Entity Framework", "SQL", "JavaScript", "C#", "HTML", "CSS", "MVC",
+        "RESTful APIs", "Git", "IIS", "RBAC", "Unit Testing"
+      ],
       responsibilities: [
-        "Assisted in the development of user interfaces using Angular and Bootstrap.",
-        "Collaborated on backend development using .NET Core and SQL Server.",
-        "Participated in code reviews and implemented feedback to improve code quality.",
-        "Fixed bugs and improved application performance through code refactoring.",
-        "Documented code and features for internal knowledge sharing."
+        "Maintained and enhanced various web applications, services, and APIs, ensuring the stability and security of military networks and servers.",
+        "Developed scalable systems for the unit and the Ministry of Defense using ASP.NET MVC, implementing role-based access control (RBAC) to manage permissions for different ranks and departments.",
+        "Deployed and configured applications on IIS (Internet Information Services), ensuring optimal performance, security, and availability.",
+        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to military operational needs."
+      ],
+      learnedSkills: [
+        "Gained expertise in cybersecurity best practices to protect military systems.",
+        "Improved proficiency in database optimization and query performance tuning for large-scale applications.",
+        "Enhanced knowledge of IIS configuration, including application pooling, SSL certificate management, and load balancing.",
+        "Developed strong problem-solving and troubleshooting skills to resolve critical system issues under tight deadlines.",
+        "Acquired experience in Agile project management and collaboration tools to streamline development workflows.",
+        "Strengthened understanding of system architecture design and scalability principles for enterprise-level applications."
       ]
     }
   ];
