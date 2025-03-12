@@ -6,11 +6,12 @@ import {
   FaGit, FaServer, FaUsers, FaHandshake, FaProjectDiagram, FaLock, FaShieldAlt, FaSlideshare,
   FaCogs, FaTools, FaClock, FaTasks, FaWordpress, FaShopify, FaNetworkWired, FaCloudUploadAlt
 } from 'react-icons/fa';
-import { SiDotnet, SiMysql, SiPostman, SiExpress, SiMongodb, SiBootstrap, SiTailwindcss } from 'react-icons/si';
-import { BiLogoJquery } from 'react-icons/bi';
+import { SiDotnet, SiMysql, SiPostman, SiExpress, SiMongodb, SiBootstrap, SiTailwindcss, SiSqlite,
+   SiAdobeaftereffects, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro
+  } from 'react-icons/si';
+import { BiLogoJquery, BiLogoFigma } from 'react-icons/bi';
 import { TbApi } from 'react-icons/tb';
 import { RiSecurePaymentFill, RiAdminFill } from 'react-icons/ri';
-import { SiSqlite } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
 import { MdOutlineSecurity } from 'react-icons/md';
 import { BsPersonWorkspace } from 'react-icons/bs';
@@ -85,6 +86,14 @@ const Skills = () => {
     { name: 'CI/CD Pipelines', icon: FaCogs },
   ];
 
+  const DesignTools = [
+    { name: 'Adobe Premiere Pro', icon: SiAdobepremierepro },
+    { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
+    { name: 'Adobe Illustrator', icon: SiAdobeillustrator },
+    { name: 'After Effect', icon: SiAdobeaftereffects }, 
+    { name: 'Figma', icon: BiLogoFigma }, 
+  ];
+
   const eCommerceSkills = [
     { name: 'WordPress & WooCommerce', icon: FaWordpress },
     { name: 'Shopify Custom Development', icon: FaShopify },
@@ -127,6 +136,7 @@ const Skills = () => {
         <SkillCategory title="DevOps & Deployment" skills={devOpsSkills} />
         <SkillCategory title="E-Commerce & Business Solutions" skills={eCommerceSkills} />
         <SkillCategory title="Tools & Technologies" skills={toolsSkills} />
+        <SkillCategory title="Design Tools" skills={DesignTools} />
         <SkillCategory title="Soft Skills" skills={softSkills} />
       </div>
     </section>
