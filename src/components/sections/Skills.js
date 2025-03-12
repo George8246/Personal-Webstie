@@ -3,11 +3,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaDatabase, 
-  FaGit, FaServer, FaTools, FaUsers, FaHandshake, FaProjectDiagram, FaLock, FaShieldAlt, FaCogs
+  FaGit, FaServer, FaUsers, FaHandshake, FaProjectDiagram, FaLock, FaShieldAlt, FaSlideshare,
+  FaCogs, FaTools, FaClock, FaTasks, FaWordpress, FaShopify, FaNetworkWired, FaCloudUploadAlt
 } from 'react-icons/fa';
 import { SiDotnet, SiMysql, SiPostman, SiExpress, SiMongodb, SiBootstrap, SiTailwindcss } from 'react-icons/si';
 import { BiLogoJquery } from 'react-icons/bi';
+import { TbApi } from 'react-icons/tb';
+import { RiSecurePaymentFill, RiAdminFill } from 'react-icons/ri';
+import { SiSqlite } from 'react-icons/si';
 import { VscVscode } from 'react-icons/vsc';
+import { MdOutlineSecurity } from 'react-icons/md';
+import { BsPersonWorkspace } from 'react-icons/bs';
 
 const SkillCategory = ({ title, skills }) => {
   return (
@@ -48,48 +54,53 @@ const Skills = () => {
     { name: 'Node.js', icon: FaNodeJs },
     { name: 'Express.js', icon: SiExpress },
     { name: 'ASP.NET Core', icon: SiDotnet },
-    { name: 'REST APIs', icon: FaServer },
+    { name: 'REST APIs', icon: TbApi },
   ];
 
   const databaseSkills = [
-    { name: 'SSMS', icon: FaDatabase },
+    { name: 'SQL Server Management Studio', icon: FaDatabase },
     { name: 'MySQL', icon: SiMysql },
-    { name: 'SQLite', icon: FaDatabase },
+    { name: 'SQLite', icon: SiSqlite },
     { name: 'MongoDB', icon: SiMongodb },
   ];
 
   const securitySkills = [
-    { name: 'Cybersecurity Best Practices', icon: FaShieldAlt },
+    { name: 'Cybersecurity Best Practices', icon: MdOutlineSecurity },
     { name: 'Cryptography & Data Security', icon: FaLock },
-    { name: 'SQL Injection (SQLi)', icon: FaShieldAlt },
-    { name: 'Cross-Site Scripting (XSS)', icon: FaShieldAlt },
-    { name: 'Cross-Site Request Forgery', icon: FaShieldAlt },
-    { name: 'Network Vulnerability Assessment', icon: FaShieldAlt },
+    { name: 'Network Vulnerability Assessment', icon: FaNetworkWired },
+    { name: 'Web Security', icon: FaShieldAlt },
   ];
 
   const devOpsSkills = [
     { name: 'Git & GitHub', icon: FaGit },
-    { name: 'IIS Configuration', icon: FaServer },
+    { name: 'Internet Information Services (IIS)', icon: FaServer },
     { name: 'CI/CD Workflows', icon: FaCogs },
-    { name: 'Load Balancing & Server Configuration', icon: FaServer },
-    { name: 'Hosting & Deployment', icon: FaServer },
+    { name: 'Hosting & Deployment', icon: FaCloudUploadAlt },
+  ];
+
+  const toolsSkills = [
+    { name: 'VSCode', icon: VscVscode },
+    { name: 'Postman', icon: SiPostman },
+    { name: 'Dev Tools', icon: FaTools },
+    { name: 'CI/CD Pipelines', icon: FaCogs },
   ];
 
   const eCommerceSkills = [
-    { name: 'WordPress & WooCommerce', icon: FaServer },
-    { name: 'Shopify Custom Development', icon: FaServer },
-    { name: 'Payment Gateway Integration', icon: FaServer },
-    { name: 'Admin Panel Development', icon: FaServer },
+    { name: 'WordPress & WooCommerce', icon: FaWordpress },
+    { name: 'Shopify Custom Development', icon: FaShopify },
+    { name: 'Payment Gateway Integration', icon: RiSecurePaymentFill },
+    { name: 'Admin Panel Development', icon: RiAdminFill },
   ];
 
-  const leadershipSkills = [
+  const softSkills = [
     { name: 'Team Management', icon: FaUsers },
     { name: 'Client Communication', icon: FaHandshake },
     { name: 'Project Coordination', icon: FaProjectDiagram },
     { name: 'Agile & Scrum', icon: FaServer },
-    { name: 'Mentoring & Knowledge Sharing', icon: FaUsers },
-    { name: 'Stakeholder Engagement', icon: FaUsers },
-    { name: 'Decision-Making Under Pressure', icon: FaUsers },
+    { name: 'Mentoring & Knowledge Sharing', icon: FaSlideshare },
+    { name: 'Decision-Making Under Pressure', icon: BsPersonWorkspace },
+    { name: 'Multi-Tasking', icon: FaTasks },
+    { name: 'Deadline Management', icon: FaClock },
   ];
 
   return (
@@ -115,7 +126,8 @@ const Skills = () => {
         <SkillCategory title="Security & Cybersecurity" skills={securitySkills} />
         <SkillCategory title="DevOps & Deployment" skills={devOpsSkills} />
         <SkillCategory title="E-Commerce & Business Solutions" skills={eCommerceSkills} />
-        <SkillCategory title="Leadership & Collaboration" skills={leadershipSkills} />
+        <SkillCategory title="Tools & Technologies" skills={toolsSkills} />
+        <SkillCategory title="Soft Skills" skills={softSkills} />
       </div>
     </section>
   );
