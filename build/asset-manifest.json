@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5dfa8d0c.css",
+    "main.js": "/static/js/main.31ba07c3.js",
+    "static/js/453.aac68abc.chunk.js": "/static/js/453.aac68abc.chunk.js",
+    "static/media/Glasses AR.gif": "/static/media/Glasses AR.46b7013a185e864fbacc.gif",
+    "static/media/Personal Webstie.gif": "/static/media/Personal Webstie.4786318fcad6a07d4649.gif",
+    "static/media/Huddle.gif": "/static/media/Huddle.bba8b07852e5b2e79b64.gif",
+    "static/media/insurance.gif": "/static/media/insurance.26aff80ecd89aa937cd9.gif",
+    "static/media/Dr Raw.gif": "/static/media/Dr Raw.add7c40e7f9d1b24715e.gif",
+    "static/media/EasyBank.gif": "/static/media/EasyBank.094e16f25b5134d91657.gif",
+    "static/media/Dr Raw.png": "/static/media/Dr Raw.78b2301683316778df54.png",
+    "static/media/Glasses AR.png": "/static/media/Glasses AR.1b287d0f2c44b5af486f.png",
+    "static/media/EasyBank.png": "/static/media/EasyBank.61d56b1b9736be0c0378.png",
+    "static/media/Personal Webstie.png": "/static/media/Personal Webstie.05a63cf1b01ad901270e.png",
+    "static/media/insurance.png": "/static/media/insurance.df331e68aeaf47689615.png",
+    "static/media/Huddle.png": "/static/media/Huddle.e36f930541846fe4ab9a.png",
+    "static/media/profile-placeholder.jpg": "/static/media/profile-placeholder.1d45b8fc7fc73692eb28.jpg",
+    "index.html": "/index.html",
+    "main.5dfa8d0c.css.map": "/static/css/main.5dfa8d0c.css.map",
+    "main.31ba07c3.js.map": "/static/js/main.31ba07c3.js.map",
+    "453.aac68abc.chunk.js.map": "/static/js/453.aac68abc.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dfa8d0c.css",
+    "static/js/main.31ba07c3.js"
+  ]
+}
