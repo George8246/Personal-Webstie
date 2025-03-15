@@ -102,10 +102,6 @@ const Projects = () => {
     }
   ];
 
-  const challenges = [
-    
-  ];
-
   const unpublishedProjects = [
     {
       title: "Smart Glasses E-commerce Platform",
