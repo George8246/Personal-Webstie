@@ -89,35 +89,6 @@ const Projects = () => {
       liveDemo: "https://www.drrawegypt.com/"
     },
     {
-      title: "Portfolio Website",
-      description: "Created a professional portfolio website showcasing my skills, projects, and experience as a Full-Stack Developer. Designed with modern principles, responsive layouts, and interactive features for a user-friendly digital presence.",
-      image: PersonalWebstie,
-      gif: PersonalWebstieGif,
-      technologies: ["React", "Tailwind CSS", "Framer Motion"],
-      github: "https://github.com/George8246/Personal-Webstie.git"
-    },
-    {
-      title: "Glass-Shop Project",
-      description: "Developed a MERN-based e-commerce platform for selling glasses. Includes admin panel, user authentication, and shopping cart. Adding order processing, payment integration, and a camera feature to check glass fit.",
-      image: GlassesAR,
-      gif: GlassesARGif,
-      technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-      github: "https://github.com/George8246/Glasses-AR.git",
-      liveDemo: "https://glasses-ar.netlify.app/"
-    },
-  ];
-
-  const challenges = [
-    {
-      title: "Hudle Community Landing Page",
-      description: "Hudle Community is a sleek, modern landing page demo showcasing clean design and user-friendly features. Built as a design concept, it highlights responsive layouts and vibrant visuals. Explore this creative project for inspiration in modern web design!",
-      image: Huddle,
-      gif: HuddleGif,
-      technologies: ["HTML", "CSS", "JavaScript", "Responsive Design"],
-      github: "https://github.com/George8246/huddle-landing-page-with-curved-sections-master",
-      liveDemo: "https://hudle-community.netlify.app/"
-    },
-    {
       title: "EasyBank Landing Page",
       description: "EasyBank is a modern, responsive landing page demo showcasing sleek design for a digital banking platform. Featuring vibrant visuals, smooth animations, and user-friendly navigation, it's a perfect example of fintech-inspired web design. While non-functional, it highlights cutting-edge aesthetics and usability.",
       image: EasyBank,
@@ -137,10 +108,14 @@ const Projects = () => {
     }
   ];
 
+  const challenges = [
+    
+  ];
+
   const unpublishedProjects = [
     {
       title: "Smart Glasses E-commerce Platform",
-      description: "Graduation Project: An innovative e-commerce platform offering smart glasses with integrated camera functionality. Features include a user-friendly interface for browsing and purchasing, complemented by an admin panel for managing users, orders, and product inventory seamlessly.",
+      description: "Graduation Project: An e-commerce platform for smart glasses with built-in cameras. It includes a user-friendly interface for browsing and purchasing, along with an admin panel to manage users, orders, and inventory seamlessly.",
       technologies: ["Flask", "HTML", "CSS", "jQuery", "SQLite"],
       github: "https://github.com/George8246/Blood-Donation.git"
     },
@@ -155,7 +130,25 @@ const Projects = () => {
       description: "A frontend e-commerce platform designed for selling clothing. Features include a user-friendly interface for browsing products, detailed item descriptions, and a seamless shopping experience with intuitive navigation and responsive design.",
       technologies: ["React", "CSS", "JavaScript"],
       github: "https://github.com/George8246/Easy-Shopping.git"
-    }
+    },
+    {
+      title: "Glass-Shop Project",
+      description: "Developed a MERN-based e-commerce platform for selling glasses. Includes admin panel, user authentication, and shopping cart. Adding order processing, payment integration, and a camera feature to check glass fit.",
+      technologies: ["MongoDB", "Express.js", "React", "Node.js"],
+      github: "https://github.com/George8246/Glasses-AR.git"
+    },
+    {
+      title: "Notes Keeper",
+      description: "Users can effortlessly create, edit, and organize notes within diffrent areas, ensuring a structured and clutter-free experience, with intuitive navigation and real-time updates, the platform adapts to diverse workflows, making it ideal for both personal and professional use",
+      technologies: ["React", "HTML", "CSS", "JavaScript"],
+      github: "https://github.com/George8246/Keeper.git"
+    },
+    {
+      title: "KOX",
+      description: "The fashion website is a sleek, fully functional e-commerce platform built on WordPress and WooCommerce with a wide range of clothing. it features a responsive design, easy navigation, and product categorization, allowing customers to browse and shop effortlessly by style, size, or collection.",
+      technologies: ["WordPress", "WooCommerce", "Payment Integration"],
+      github: "https://github.com/George8246/KOX.git"
+    },
   ];
 
   return (
@@ -167,20 +160,12 @@ const Projects = () => {
           transition={{ duration: 0.5 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Projects</h2>
+          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8">Projects & Frontend Challenges</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project, index) => (
               <ProjectCard key={index} project={project} index={index} />
             ))}
-          </div>
-
-          {/* New Challenges Section */}
-          <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8 mt-16">Frontend Challenges</h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {challenges.map((project, index) => (
-              <ProjectCard key={`challenge-${index}`} project={project} index={index} />
-            ))}
-          </div>
+          </div>          
 
           {/* New Unpublished Projects Section */}
           <h2 className="text-3xl font-bold text-center text-gray-900 dark:text-white mb-8 mt-16">

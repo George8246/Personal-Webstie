@@ -11,7 +11,7 @@ const ExperienceItem = ({ experience, index }) => {
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
     >
-      <div className="absolute -left-3 top-0 bg-blue-500 dark:bg-blue-400 rounded-full w-4 h-4"></div>
+      <div className="absolute -left-2 top-0 bg-blue-500 dark:bg-blue-400 rounded-full w-4 h-4"></div>
       <div className="mb-2">
         <span className="inline-block bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 text-sm px-3 py-1 rounded-full">
           {experience.period}
@@ -57,6 +57,30 @@ const ExperienceItem = ({ experience, index }) => {
 const Experience = () => {
   const experiences = [
     {
+      title: "Military Reserve Officer | Full Stack Developer",
+      company: "Ministry of Defense",
+      period: "2023 - 2025",
+      description: "Led development and maintenance of critical military web applications and systems, focusing on security, scalability, and performance optimization.",
+      technologies: [
+        "ASP.NET", "Entity Framework", "SQL", "JavaScript", "C#", "HTML", "CSS", "MVC",
+        "RESTful APIs", "Git", "IIS", "RBAC", "Unit Testing"
+      ],
+      responsibilities: [
+        "Maintained and enhanced various web applications, services, and APIs, ensuring the stability and security of military networks and servers.",
+        "Developed scalable systems for the unit and the Ministry of Defense using ASP.NET MVC, implementing role-based access control (RBAC) to manage permissions for different ranks and departments.",
+        "Deployed and configured applications on IIS (Internet Information Services), ensuring optimal performance, security, and availability.",
+        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to military operational needs."
+      ],
+      learnedSkills: [
+        "Gained expertise in cybersecurity best practices to protect military systems.",
+        "Improved proficiency in database optimization and query performance tuning for large-scale applications.",
+        "Enhanced knowledge of IIS configuration, including application pooling, SSL certificate management, and load balancing.",
+        "Developed strong problem-solving and troubleshooting skills to resolve critical system issues under tight deadlines.",
+        "Acquired experience in Agile project management and collaboration tools to streamline development workflows.",
+        "Strengthened understanding of system architecture design and scalability principles for enterprise-level applications."
+      ]
+    },
+    {
       title: "Freelance Web Developer",
       company: "Self-Employed",
       period: "2022 - 2023",
@@ -80,35 +104,11 @@ const Experience = () => {
         "Strengthened understanding of web security practices, including SSL implementation and data protection measures."
       ]
     },
-    {
-      title: "Military Reserve Officer | Full Stack Developer",
-      company: "Ministry of Defense",
-      period: "2024 - 2025",
-      description: "Led development and maintenance of critical military web applications and systems, focusing on security, scalability, and performance optimization.",
-      technologies: [
-        "ASP.NET", "Entity Framework", "SQL", "JavaScript", "C#", "HTML", "CSS", "MVC",
-        "RESTful APIs", "Git", "IIS", "RBAC", "Unit Testing"
-      ],
-      responsibilities: [
-        "Maintained and enhanced various web applications, services, and APIs, ensuring the stability and security of military networks and servers.",
-        "Developed scalable systems for the unit and the Ministry of Defense using ASP.NET MVC, implementing role-based access control (RBAC) to manage permissions for different ranks and departments.",
-        "Deployed and configured applications on IIS (Internet Information Services), ensuring optimal performance, security, and availability.",
-        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to military operational needs."
-      ],
-      learnedSkills: [
-        "Gained expertise in cybersecurity best practices to protect military systems.",
-        "Improved proficiency in database optimization and query performance tuning for large-scale applications.",
-        "Enhanced knowledge of IIS configuration, including application pooling, SSL certificate management, and load balancing.",
-        "Developed strong problem-solving and troubleshooting skills to resolve critical system issues under tight deadlines.",
-        "Acquired experience in Agile project management and collaboration tools to streamline development workflows.",
-        "Strengthened understanding of system architecture design and scalability principles for enterprise-level applications."
-      ]
-    }
   ];
-
+  
   return (
-    <section id="experience" className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="experience">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -122,7 +122,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        <div className="max-w-3xl mx-auto">
+        <div className="max-w-3xl mx-auto mb-16">
           {experiences.map((experience, index) => (
             <ExperienceItem key={index} experience={experience} index={index} />
           ))}

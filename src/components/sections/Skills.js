@@ -3,8 +3,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaHtml5, FaCss3Alt, FaJs, FaReact, FaAngular, FaNodeJs, FaDatabase, 
-  FaGit, FaServer, FaUsers, FaHandshake, FaProjectDiagram, FaLock, FaShieldAlt, FaSlideshare,
-  FaCogs, FaTools, FaClock, FaTasks, FaWordpress, FaShopify, FaNetworkWired, FaCloudUploadAlt
+  FaGit, FaServer, FaUsers, FaHandshake, FaProjectDiagram, FaLock, FaShieldAlt, FaLaptopCode,
+  FaCogs, FaTools, FaClock, FaTasks, FaWordpress, FaShopify, FaCheckCircle, FaCloudUploadAlt, FaBookReader
 } from 'react-icons/fa';
 import { SiDotnet, SiMysql, SiPostman, SiExpress, SiMongodb, SiBootstrap, SiTailwindcss, SiSqlite,
    SiAdobeaftereffects, SiAdobeillustrator, SiAdobephotoshop, SiAdobepremierepro
@@ -14,7 +14,7 @@ import { TbApi } from 'react-icons/tb';
 import { RiSecurePaymentFill, RiAdminFill } from 'react-icons/ri';
 import { VscVscode } from 'react-icons/vsc';
 import { MdOutlineSecurity } from 'react-icons/md';
-import { BsPersonWorkspace } from 'react-icons/bs';
+import { BsPersonWorkspace, BsDatabaseFillLock } from 'react-icons/bs';
 
 const SkillCategory = ({ title, skills }) => {
   return (
@@ -59,24 +59,24 @@ const Skills = () => {
   ];
 
   const databaseSkills = [
-    { name: 'SQL Server Management Studio', icon: FaDatabase },
+    { name: 'SSMS', icon: FaDatabase },
     { name: 'MySQL', icon: SiMysql },
     { name: 'SQLite', icon: SiSqlite },
     { name: 'MongoDB', icon: SiMongodb },
   ];
 
   const securitySkills = [
-    { name: 'Cybersecurity Best Practices', icon: MdOutlineSecurity },
-    { name: 'Cryptography & Data Security', icon: FaLock },
-    { name: 'Network Vulnerability Assessment', icon: FaNetworkWired },
+    { name: 'Cybersecurity', icon: MdOutlineSecurity },
+    { name: 'Cryptography', icon: FaLock },
+    { name: 'Data Security', icon: BsDatabaseFillLock },
     { name: 'Web Security', icon: FaShieldAlt },
   ];
 
   const devOpsSkills = [
     { name: 'Git & GitHub', icon: FaGit },
-    { name: 'Internet Information Services (IIS)', icon: FaServer },
+    { name: 'IIS', icon: FaServer },
     { name: 'CI/CD Workflows', icon: FaCogs },
-    { name: 'Hosting & Deployment', icon: FaCloudUploadAlt },
+    { name: 'Deployment', icon: FaCloudUploadAlt },
   ];
 
   const toolsSkills = [
@@ -87,7 +87,7 @@ const Skills = () => {
   ];
 
   const DesignTools = [
-    { name: 'Adobe Premiere Pro', icon: SiAdobepremierepro },
+    { name: 'Adobe Premiere', icon: SiAdobepremierepro },
     { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
     { name: 'Adobe Illustrator', icon: SiAdobeillustrator },
     { name: 'After Effect', icon: SiAdobeaftereffects }, 
@@ -95,8 +95,8 @@ const Skills = () => {
   ];
 
   const eCommerceSkills = [
-    { name: 'WordPress & WooCommerce', icon: FaWordpress },
-    { name: 'Shopify Custom Development', icon: FaShopify },
+    { name: 'WordPress', icon: FaWordpress },
+    { name: 'Shopify', icon: FaShopify },
     { name: 'Payment Gateway Integration', icon: RiSecurePaymentFill },
     { name: 'Admin Panel Development', icon: RiAdminFill },
   ];
@@ -104,17 +104,19 @@ const Skills = () => {
   const softSkills = [
     { name: 'Team Management', icon: FaUsers },
     { name: 'Client Communication', icon: FaHandshake },
-    { name: 'Project Coordination', icon: FaProjectDiagram },
-    { name: 'Agile & Scrum', icon: FaServer },
-    { name: 'Mentoring & Knowledge Sharing', icon: FaSlideshare },
-    { name: 'Decision-Making Under Pressure', icon: BsPersonWorkspace },
     { name: 'Multi-Tasking', icon: FaTasks },
+    { name: 'Agile & Scrum', icon: FaServer },
+    { name: 'Mentoring', icon: BsPersonWorkspace },
+    { name: 'Decision-Making', icon: FaCheckCircle },
+    { name: 'Knowledge Sharing', icon: FaBookReader },
+    { name: 'Work Under Pressure', icon: FaLaptopCode },
+    { name: 'Project Coordination', icon: FaProjectDiagram },
     { name: 'Deadline Management', icon: FaClock },
   ];
 
   return (
-    <section id="skills" className="py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
