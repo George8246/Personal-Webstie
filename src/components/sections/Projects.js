@@ -2,18 +2,12 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
-import GlassesAR from '../../assets/images/Glasses AR.png';
 import DrRaw from '../../assets/images/Dr Raw.png';
-import PersonalWebstie from '../../assets/images/Personal Webstie.png';
 import EasyBank from '../../assets/images/EasyBank.png';
-import Huddle from '../../assets/images/Huddle.png';
 import insurance from '../../assets/images/insurance.png';
 
-import GlassesARGif from '../../assets/gifs/Glasses AR.gif';
 import DrRawGif from '../../assets/gifs/Dr Raw.gif';
-import PersonalWebstieGif from '../../assets/gifs/Personal Webstie.gif';
 import EasyBankGif from '../../assets/gifs/EasyBank.gif';
-import HuddleGif from '../../assets/gifs/Huddle.gif';
 import insuranceGif from '../../assets/gifs/insurance.gif';
 
 const ProjectCard = ({ project, index }) => {
