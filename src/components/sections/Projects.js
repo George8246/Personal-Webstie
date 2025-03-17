@@ -107,7 +107,7 @@ const Projects = () => {
       title: "Smart Glasses E-commerce Platform",
       description: "Graduation Project: An e-commerce platform for smart glasses with built-in cameras. It includes a user-friendly interface for browsing and purchasing, along with an admin panel to manage users, orders, and inventory seamlessly.",
       technologies: ["Flask", "HTML", "CSS", "jQuery", "SQLite"],
-      github: "https://github.com/George8246/Blood-Donation.git"
+      github: "https://github.com/George8246/Graduation-Project"
     },
     {
       title: "Blood Donation Platform",
@@ -119,7 +119,7 @@ const Projects = () => {
       title: "AR Glasses-Shop Project",
       description: "Developed a MERN-based e-commerce platform for selling glasses. Includes admin panel, user authentication, and shopping cart. Adding order processing, payment integration, and a camera feature to check glass fit.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js"],
-      github: "https://github.com/George8246/Glasses-AR.git"
+      github: "https://github.com/George8246/AR-Glasses-Shop"
     },
     {
       title: "Notes Keeper",
