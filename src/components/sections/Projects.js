@@ -93,7 +93,7 @@ const Projects = () => {
     },
     {
       title: "Insurance Landing Page",
-      description: "Explore a sleek and modern insurance landing page designed as a demo project. This visually appealing site showcases user-friendly navigation and responsive design, perfect for presenting insurance services. A great example of a professional and engaging web design concept.",
+      description: "Explore a sleek and modern insurance landing page designed as a demo project. This visually appealing site showcases user-friendly navigation and responsive design, which are perfect for presenting insurance services. A great example of a professional and engaging web design concept.",
       image: insurance,
       gif: insuranceGif,
       technologies: ["HTML", "CSS", "JavaScript"],
@@ -122,14 +122,14 @@ const Projects = () => {
       github: "https://github.com/George8246/Easy-Shopping.git"
     },
     {
-      title: "Glass-Shop Project",
+      title: "AR Glasses-Shop Project",
       description: "Developed a MERN-based e-commerce platform for selling glasses. Includes admin panel, user authentication, and shopping cart. Adding order processing, payment integration, and a camera feature to check glass fit.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js"],
       github: "https://github.com/George8246/Glasses-AR.git"
     },
     {
       title: "Notes Keeper",
-      description: "Users can effortlessly create, edit, and organize notes within diffrent areas, ensuring a structured and clutter-free experience, with intuitive navigation and real-time updates, the platform adapts to diverse workflows, making it ideal for both personal and professional use",
+      description: "Users can effortlessly create, edit, and organize notes within different areas, ensuring a structured and clutter-free experience, with intuitive navigation and real-time updates, the platform adapts to diverse workflows, making it ideal for both personal and professional use",
       technologies: ["React", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/George8246/Keeper.git"
     },

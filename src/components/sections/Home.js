@@ -6,7 +6,7 @@ import profilePlaceholder from '../../assets/images/profile-placeholder.jpg';
 
 const Home = () => {
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center pt-16 pb-12">
+    <section id="home" className="min-h-screen flex items-center justify-center pt-16 pb-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center">
         <motion.div 
           className="md:w-1/2 text-center md:text-left"
@@ -21,7 +21,7 @@ const Home = () => {
             Full-Stack Web Developer
           </h2>
           <p className="text-xl mb-6 text-gray-600 dark:text-gray-400">
-            Specializing in JavaScript, .NET Core, and SQL Server
+            Specializing in React, .NET Core, and SQL Server
           </p>
           <div className="flex justify-center md:justify-start space-x-4 mb-8">
             <a 
@@ -55,7 +55,7 @@ const Home = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="relative">
+          <div className="relative mb-8">
             <div className="absolute inset-0 bg-blue-600 rounded-full transform translate-x-4 translate-y-4"></div>
             <img 
               src={profilePlaceholder} 

@@ -60,7 +60,7 @@ const Experience = () => {
       title: "Military Reserve Officer | Full Stack Developer",
       company: "Ministry of Defense",
       period: "2023 - 2025",
-      description: "Led development and maintenance of critical military web applications and systems, focusing on security, scalability, and performance optimization.",
+      description: "Led development and maintenance of military web applications and systems, focusing on security, scalability, and performance optimization.",
       technologies: [
         "ASP.NET", "Entity Framework", "SQL", "JavaScript", "C#", "HTML", "CSS", "MVC",
         "RESTful APIs", "Git", "IIS", "RBAC", "Unit Testing"
@@ -69,7 +69,7 @@ const Experience = () => {
         "Maintained and enhanced various web applications, services, and APIs, ensuring the stability and security of military networks and servers.",
         "Developed scalable systems for the unit and the Ministry of Defense using ASP.NET MVC, implementing role-based access control (RBAC) to manage permissions for different ranks and departments.",
         "Deployed and configured applications on IIS (Internet Information Services), ensuring optimal performance, security, and availability.",
-        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to military operational needs."
+        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to needs."
       ],
       learnedSkills: [
         "Gained expertise in cybersecurity best practices to protect military systems.",
@@ -108,7 +108,7 @@ const Experience = () => {
   
   return (
     <section id="experience">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -118,7 +118,7 @@ const Experience = () => {
         >
           <h2 className="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Work Experience</h2>
           <p className="text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-            My professional journey as a web developer, showcasing my growth and the projects I've worked on.
+            My professional journey as a web developer showcases my growth and the projects I've worked on.
           </p>
         </motion.div>
 
