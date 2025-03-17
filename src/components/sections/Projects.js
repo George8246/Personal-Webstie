@@ -104,32 +104,24 @@ const Projects = () => {
 
   const unpublishedProjects = [
     {
-      title: "Smart Glasses E-commerce Platform",
-      description: "Graduation Project: An e-commerce platform for smart glasses with built-in cameras. It includes a user-friendly interface for browsing and purchasing, along with an admin panel to manage users, orders, and inventory seamlessly.",
-      technologies: ["Flask", "HTML", "CSS", "jQuery", "SQLite"],
-      github: "https://github.com/George8246/Blood-Donation.git"
-    },
-    {
-      title: "Blood Donation Platform",
-      description: "A blood donation platform enabling users to log in, register their blood type, and respond to hospital requests. Hospitals can post announcements for specific blood types, creating a seamless connection between donors and healthcare providers.",
-      technologies: ["HTML", "CSS", "Bootstrap", "jQuery", "Express", "MySQL"],
-      github: "https://github.com/George8246/Blood-Donation.git"
-    },
-    {
-      title: "Fashion E-commerce Frontend",
-      description: "A frontend e-commerce platform designed for selling clothing. Features include a user-friendly interface for browsing products, detailed item descriptions, and a seamless shopping experience with intuitive navigation and responsive design.",
-      technologies: ["React", "CSS", "JavaScript"],
-      github: "https://github.com/George8246/Easy-Shopping.git"
-    },
-    {
       title: "AR Glasses-Shop Project",
       description: "Developed a MERN-based e-commerce platform for selling glasses. Includes admin panel, user authentication, and shopping cart. Adding order processing, payment integration, and a camera feature to check glass fit.",
       technologies: ["MongoDB", "Express.js", "React", "Node.js"],
       github: "https://github.com/George8246/Glasses-AR.git"
     },
     {
+      title: "Blood Donation Platform",
+      description: "A blood donation platform enabling users to log in, register their blood type, and respond to hospital requests. Hospitals can post announcements for specific blood types, creating a seamless connection between donors and healthcare providers.",
+      technologies: ["HTML", "CSS", "Bootstrap", "jQuery", "Express", "MySQL"],
+      github: "https://github.com/George8246/Blood-Donation.git"
+    },{
+      title: "Smart Glasses E-commerce Platform",
+      description: "Graduation Project: An e-commerce platform for smart glasses with built-in cameras. It includes a user-friendly interface for browsing and purchasing, along with an admin panel to manage users, orders, and inventory seamlessly.",
+      technologies: ["Flask", "HTML", "CSS", "jQuery", "SQLite"],
+      github: "https://github.com/George8246/Blood-Donation.git"
+    },{
       title: "Notes Keeper",
-      description: "Users can effortlessly create, edit, and organize notes within different areas, ensuring a structured and clutter-free experience, with intuitive navigation and real-time updates, the platform adapts to diverse workflows, making it ideal for both personal and professional use",
+      description: "The Note Keeper website is a versatile tool for managing notes efficiently. Users can easily create, edit, and organize notes, ensuring a structured and clutter-free experience.The platform adapts to diverse workflows with intuitive navigation and real-time updates, making it ideal for personal and professional use.",
       technologies: ["React", "HTML", "CSS", "JavaScript"],
       github: "https://github.com/George8246/Keeper.git"
     },
@@ -138,6 +130,12 @@ const Projects = () => {
       description: "The fashion website is a sleek, fully functional e-commerce platform built on WordPress and WooCommerce with a wide range of clothing. it features a responsive design, easy navigation, and product categorization, allowing customers to browse and shop effortlessly by style, size, or collection.",
       technologies: ["WordPress", "WooCommerce", "Payment Integration"],
       github: "https://github.com/George8246/KOX.git"
+    },
+    {
+      title: "Todo List App",
+      description: "A simple to-do list app for efficient task management. Users can create, edit, delete tasks, set deadlines, and mark items as complete. It features a clean interface, real-time updates, responsive design, and custom workspaces for organizing tasks into separate lists.",
+      technologies: ["jQuery", "EJS", "Express", "Mongoose", "CSS", "JavaScript"],
+      github: "https://github.com/George8246/Todo-List.git"
     },
   ];
 
