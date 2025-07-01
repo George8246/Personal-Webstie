@@ -56,54 +56,106 @@ const ExperienceItem = ({ experience, index }) => {
 
 const Experience = () => {
   const experiences = [
+    // Freelance Full-Stack Developer (Grouped Projects)
     {
-      title: "Military Reserve Officer | Full Stack Developer",
-      company: "Ministry of Defense",
-      period: "2023 - 2025",
-      description: "Led development and maintenance of military web applications and systems, focusing on security, scalability, and performance optimization.",
+      title: "Freelance Full-Stack Developer",
+      company: "Click7 Solutions · CGNom (R&D Project)",
+      period: "Remote | Feb 2025 – Present",
+      description: "Delivered robust web platforms and immersive 3D simulations for healthcare and e-commerce clients.",
       technologies: [
-        "ASP.NET", "Entity Framework", "SQL", "JavaScript", "C#", "HTML", "CSS", "MVC",
-        "RESTful APIs", "Git", "IIS", "RBAC", "Unit Testing"
+        "Django", "SQL", "React", "Three.js", "Zustand", "Tailwind", "REST APIs"
       ],
       responsibilities: [
-        "Maintained and enhanced various web applications, services, and APIs, ensuring the stability and security of military networks and servers.",
-        "Developed scalable systems for the unit and the Ministry of Defense using ASP.NET MVC, implementing role-based access control (RBAC) to manage permissions for different ranks and departments.",
-        "Deployed and configured applications on IIS (Internet Information Services), ensuring optimal performance, security, and availability.",
-        "Collaborated with cross-functional teams to design and deploy secure, high-performance solutions tailored to needs."
+        "Built a full-stack Django + SQL hospital management system with secure, role-based portals and automated billing.",
+        "Developed appointment booking, admin controls, and ensured compliance for sensitive patient data.",
+        "Prototyped 3D e-commerce demos using Three.js, React Fiber, and Drei, focusing on VR-style shopping UX.",
+        "Led UI/UX design for interactive simulations, optimizing for engagement and accessibility."
       ],
       learnedSkills: [
-        "Gained expertise in cybersecurity best practices to protect military systems.",
-        "Improved proficiency in database optimization and query performance tuning for large-scale applications.",
-        "Enhanced knowledge of IIS configuration, including application pooling, SSL certificate management, and load balancing.",
-        "Developed strong problem-solving and troubleshooting skills to resolve critical system issues under tight deadlines.",
-        "Acquired experience in Agile project management and collaboration tools to streamline development workflows.",
-        "Strengthened understanding of system architecture design and scalability principles for enterprise-level applications."
+        "Strengthened expertise in full-stack architecture and data security for healthcare applications.",
+        "Advanced 3D web development and state management with React Fiber and Zustand.",
+        "Enhanced skills in RESTful API design and cross-functional client collaboration."
       ]
     },
+    // Full-Stack Developer (.NET Core) at Ministry of Defense
+    {
+      title: "Full-Stack Developer (.NET Core)",
+      company: "Ministry of Defense – Egypt",
+      period: "Mar 2024 – Apr 2025",
+      description: "Engineered secure document management and geospatial tracking systems for defense operations.",
+      technologies: [
+        "ASP.NET Core", "C#", "SQL Server", "Leaflet.js", "Entity Framework", "IIS", "Git", "RBAC", "PowerShell"
+      ],
+      responsibilities: [
+        "Built a secure fax/document routing system with multi-tier RBAC and automated PDF reporting (60% faster workflow).",
+        "Developed a Leaflet.js map viewer to track document flows and a C# PDF converter (99%+ accuracy, 50+ files/day).",
+        "Onboarded junior developers, authored internal documentation, and led backend architecture decisions."
+      ],
+      learnedSkills: [
+        "Deepened knowledge of RBAC, compliance, and secure system design.",
+        "Improved leadership and mentoring skills within cross-functional teams.",
+        "Enhanced automation and reporting with PowerShell and .NET."
+      ]
+    },
+    // System Administrator at Ministry of Defense
+    {
+      title: "System Administrator",
+      company: "Ministry of Defense – Egypt",
+      period: "Dec 2023 – Mar 2024",
+      description: "Oversaw secure infrastructure and deployment readiness for development teams.",
+      technologies: [
+        "Infrastructure Automation", "Device Security", "PowerShell", "Network Readiness"
+      ],
+      responsibilities: [
+        "Managed 100+ secure development devices across internal teams.",
+        "Automated infrastructure monitoring and reporting with PowerShell scripts.",
+        "Ensured 99.9% uptime and system readiness for deployment pipelines."
+      ],
+      learnedSkills: [
+        "Advanced infrastructure automation and device security practices.",
+        "Streamlined deployment and monitoring processes."
+      ]
+    },
+    // Game Developer (Unity & C#) at Ministry of Defense
+    {
+      title: "Game Developer (Unity & C#)",
+      company: "Ministry of Defense – Egypt",
+      period: "Jun 2023 – Oct 2023",
+      description: "Developed VR training simulations to modernize military training programs.",
+      technologies: [
+        "Unity", "C#", "SQLite", "VR Development", "Simulation Design"
+      ],
+      responsibilities: [
+        "Built 6+ VR training simulations for Meta Quest 2, simulating military topography and combat.",
+        "Reduced physical training costs by 40% through immersive digital experiences.",
+        "Implemented C# and SQLite for persistent training data management."
+      ],
+      learnedSkills: [
+        "Mastered VR simulation design and Unity development.",
+        "Applied data persistence and optimization for real-time training analytics."
+      ]
+    },
+    // Freelance Web Developer (Grouped Projects)
     {
       title: "Freelance Web Developer",
-      company: "Self-Employed",
-      period: "2022 - 2023",
-      description: "Developed multiple client websites using WordPress, React, and .NET Core, delivering tailored solutions to meet diverse business needs.",
+      company: "Dr Raw Cosmetics · AR Glasses E-Commerce (Personal Project)",
+      period: "Remote | Jan 2022 – Apr 2023",
+      description: "Delivered scalable e-commerce solutions and custom web platforms for diverse clients.",
       technologies: [
-        "WordPress", "React", ".NET Core", "WooCommerce", "HTML", "CSS", 
-        "JavaScript", "PayPal API", "Stripe API", "SEO"
+        "WordPress", "Shopify", "React", "Node.js", "MongoDB", "ASP.NET Core", "SQL Server"
       ],
       responsibilities: [
-        "Built and customized e-commerce websites using WordPress and WooCommerce, ensuring seamless user experiences and robust functionality.",
-        "Integrated payment gateways, designed custom themes, and implemented SEO optimization techniques to improve website performance and search engine rankings.",
-        "Provided ongoing maintenance, feature updates, and technical support to ensure client satisfaction and long-term website reliability."
+        "Migrated Dr Raw Cosmetics from WooCommerce to Shopify, improving load time by 40% and conversions by 15%.",
+        "Integrated Stripe and PayPal, optimized UX and SEO for higher engagement.",
+        "Developed a full-stack MERN e-commerce platform with admin dashboard and JWT-based auth.",
+        "Currently migrating backend to ASP.NET Core & SQL for enhanced scalability."
       ],
       learnedSkills: [
-        "Gained hands-on experience in full-stack development, combining front-end and back-end technologies.",
-        "Developed expertise in e-commerce platform customization, including WooCommerce plugin development and theme customization.",
-        "Improved knowledge of SEO best practices, including meta tag optimization, site speed improvement, and keyword analysis.",
-        "Enhanced proficiency in responsive web design to ensure cross-device compatibility and accessibility.",
-        "Acquired skills in client communication and project management, balancing multiple projects and deadlines effectively.",
-        "Learned to troubleshoot and debug complex issues across different platforms and frameworks.",
-        "Strengthened understanding of web security practices, including SSL implementation and data protection measures."
+        "Expanded expertise in e-commerce migrations and payment integrations.",
+        "Strengthened full-stack development and system scalability strategies.",
+        "Improved SEO, UX, and project management for client-facing solutions."
       ]
-    },
+    }
   ];
   
   return (
