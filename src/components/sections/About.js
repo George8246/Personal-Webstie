@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 import { FaFileAlt, FaFileWord } from 'react-icons/fa';
 
 const About = () => {
-  const pdfResumeUrl = "https://drive.google.com/file/d/1dSNKWBrDu_6la6-1ggpZAd3r1-ClXVkr/view";
-  const wordResumeUrl = "https://drive.google.com/file/d/1MzErfzu2wN4t4_2W0zUclTZCXal_GW_k/view";
-
+  const pdfResumeUrl = "https://drive.google.com/file/d/1dJPA4dpcJhCGlgdquTgL0Wypk1IPuarL/view?usp=drive_link";
+  const wordResumeUrl = "https://drive.google.com/file/d/1VT43ch0h3PfSTX8yKTI_RllvxCi3cd4g/view?usp=drive_link";
+  
   return (
     <section id="about" className="py-16 bg-gray-50 dark:bg-gray-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

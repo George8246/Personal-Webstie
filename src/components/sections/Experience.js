@@ -120,7 +120,7 @@ const Experience = () => {
     {
       title: "Game Developer (Unity & C#)",
       company: "Ministry of Defense – Egypt",
-      period: "Jun 2023 – Oct 2023",
+      period: "Jun 2023 – Dec 2023",
       description: "Developed VR training simulations to modernize military training programs.",
       technologies: [
         "Unity", "C#", "SQLite", "VR Development", "Simulation Design"
